@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">BMI</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bmi">
+    <ion-input placeholder="Age" [(ngModel)]="age" style="padding-left: 10px import !important;"></ion-input><br>
+    <ion-input placeholder="Weight (kg)" [(ngModel)]="weight" style="padding-left: 10px import !important;"></ion-input><br>
+    <ion-input placeholder="Height (cm)" [(ngModel)]="height" style="padding-left: 10px import !important;"></ion-input><br>
+
+  </div>
+  <ion-button class="calculate" expand="full"  (click)="cal()">Calculate</ion-button>
+
+</ion-content>

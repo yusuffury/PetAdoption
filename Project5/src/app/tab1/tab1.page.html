@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Paws
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="adopt">
+      Adopt a Pet
+    </ion-segment-button>
+    <ion-segment-button value="missing">
+      Missing Pets
+    </ion-segment-button>
+  </ion-segment>
+
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'adopt'">
+      <ion-card class="fake">
+        <ion-card-header>
+          <img src="assets/1rabbit.jpg">
+          <ion-card-content>
+            <h2>Name: Kiko</h2>
+            <p>Detail: 3kg, brown eyed, 2 years old.</p>
+            <p>Contact: Ahmad +60 1123456839</p>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+      <ion-card class="fake">
+        <ion-card-header>
+          <img src="assets/dog.jpeg">
+          <ion-card-content>
+            <h2>Name: Robert</h2>
+            <p>Detail: 10kg, blue eyed</p>
+            <p>Contact: @hazimhasnol on ig</p>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+        <ion-card class="fake">
+        <ion-card-header>
+          <img src="assets/cat2.jpg">
+          <ion-card-content>
+            <h2>Name: Kittens</h2>
+            <p>Detail: 4 Kitties, Orange and White mixed colour</p>
+            <p>Contact: Al Amin +60 1255433358</p>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+      
+      </ion-list>
+      <ion-list *ngSwitchCase="'missing'">
+        <ion-card class="fake">
+          <ion-card-header>
+            <img src="assets/cat1.jpg">
+            <ion-card-content>
+              <h2>Name: Milo</h2>
+              <p>Detail: 7kg, colour brown, 3 years old.</p>
+              <p>Missing Date: 24/12/21</p>
+              <p>Contact: @hazimhasnol on ig</p>
+            </ion-card-content>
+          </ion-card-header>
+        </ion-card>
+      </ion-list>
+    </div>
+
+    
+  </ion-content>
+

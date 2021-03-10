@@ -1,0 +1,49 @@
+ion-content {
+    --background: url('/assets/salim.png') no-repeat center center / cover;
+    position: center;
+}
+   
+
+.content {
+    position: fixed;
+    margin-top: 210px;
+    margin-left: 22px;
+}
+
+.button-action {
+    margin-left: 70px;
+}
+
+.signup-text {
+    font-size:x-small;
+    color: white;
+    text-align: center;
+    text-transform: none;
+}
+
+.signin-text {
+    font-size:x-small;
+    color: black;
+    text-align: center;
+    text-transform: none;
+}
+
+ion-input {
+    background-color: white;
+    border-radius: 5px;
+    font-size: small;
+    width: 200px;
+}
+
+.actionbutton {
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 13px;
+    font-size: small;
+}
+
+.forgot {
+    margin-left: 19px;
+}

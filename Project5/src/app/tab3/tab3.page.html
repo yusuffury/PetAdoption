@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Profile
+    </ion-title>
+    <ion-icon routerLink="/edit" size="small" color="dark" slot="end" name="settings-sharp"></ion-icon>
+    </ion-toolbar>
+</ion-header>
+
+ <ion-content [fullscreen]=true>   
+
+  <div class="card">
+  <div class="header">
+    <div class="avatar">
+      <img src="/assets/prof.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="card-body">
+  <div class="user-meta ion-text-center">
+    <h3>{{ post.name }}</h3>
+    <h5>{{ post.email }}</h5>
+</div>
+<br>
+      <ion-button expand="full" routerLink="/tab5" color="primary">BMI</ion-button>
+      <ion-button expand="full" routerLink="/login" color="primary">Log Out</ion-button>
+      <br>
+      <br>
+</div>    
+</ion-content>

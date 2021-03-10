@@ -1,0 +1,51 @@
+ion-title {
+    font-weight: 600;
+
+}
+
+ion-content {
+    --background: url('/assets/backgrounf.jpg') no-repeat center center / cover;
+    position: center;
+}
+
+.card {
+    margin: 0 auto;
+
+    .header {
+        height: 125px;
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 0 auto;
+
+            img {
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                bottom: calc(-1*(80px + 4px));
+                border: 3px solid blue;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+
+.card-body {
+    background-color: #ffffff;
+    padding: 30px;
+    height: calc(100vh – (200px + 56px));
+    overflow: hidden;
+
+    .user-meta {
+        padding-top: 40px;
+
+        .playername {
+            font-size: 24px;
+            font-weight: 600;
+            color: #303940;
+        }
+    }
+}

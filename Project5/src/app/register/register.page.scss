@@ -1,0 +1,30 @@
+ion-content {
+    --background: url('/assets/salim.png') no-repeat center center / cover;
+    position: center;
+}
+
+.content {
+    position: fixed;
+    margin-top: 210px;
+    margin-left: 22px;
+}
+
+ion-input {
+    background-color: white;
+    border-radius: 5px;
+    font-size: small;
+    width: 200px;
+}
+
+.actionbutton {
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 13px;
+    font-size: small;
+}
+
+.account {
+    margin-left: 28px;
+}

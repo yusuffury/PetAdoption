@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Paws
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="adopt">
+      Adopt a Pet
+    </ion-segment-button>
+    <ion-segment-button value="missing">
+      Missing Pets
+    </ion-segment-button>
+  </ion-segment>
+
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'adopt'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/www.jpeg">
+          </ion-thumbnail>
+          <h4>Lahanat</h4>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/www.jpeg">
+          </ion-thumbnail>
+          <h4>Oscar</h4>
+        </ion-item>
+        <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/www.jpeg">
+        </ion-thumbnail>
+        <h4>Oscar</h4>
+      </ion-item>
+    </ion-list>
+  
+      <ion-list *ngSwitchCase="'missing'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/www.jpeg">
+          </ion-thumbnail>
+          <h4>Luna</h4>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/www.jpeg">
+          </ion-thumbnail>
+          <h4>Milo</h4>
+        </ion-item>
+      <ion-item routerLink="/login">
+        <ion-thumbnail item-start>
+          <img src="assets/www.jpeg">
+        </ion-thumbnail>
+        <h4>Milo</h4>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/www.jpeg">
+        </ion-thumbnail>
+        <h4>Halim</h4>
+      </ion-item>
+    </ion-list>
+    </div>
+  </ion-content>
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/hoome">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button routerLink="/tabs/tab2">
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-label>Post</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button routerLink="/tabs/tab3">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+  </ion-tabs>
+  
+

@@ -1,0 +1,14 @@
+ion-content {
+    --background: url('/assets/hamad.png') no-repeat center center / cover;
+    position: center;
+}
+
+@-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+
+.container {
+    -webkit-animation:slide-in-fwd-center 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-fwd-center 1s cubic-bezier(.25,.46,.45,.94) both;
+    img {
+        height: 150px;
+        margin-top: 60%;
+    }
+}
